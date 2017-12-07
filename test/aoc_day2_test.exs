@@ -16,4 +16,19 @@ defmodule AocDay2Test do
     # IO.inspect Aoc.day2_solution1(Aoc.day2_input())
     assert Aoc.day2_solution1(Aoc.day2_input()) == 46402
   end
+
+  test "Day2.solution2(example_input)" do
+    input =
+      """
+      5 9 2 8
+      9 4 7 3
+      3 8 6 5
+      """
+    assert Aoc.day2_solution2(input) == 9
+  end
+
+  test "Day2.solution2(Aoc.day2_input())" do
+    # IO.inspect Aoc.day2_solution2(Aoc.day2_input())
+    assert Aoc.day2_solution2(Aoc.day2_input()) == 265
+  end
 end

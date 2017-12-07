@@ -29,4 +29,6 @@ defmodule Aoc do
   end
 
   def day2_solution1(input), do: Day2.solution1(input)
+
+  def day2_solution2(input), do: Day2.solution2(input)
 end
