@@ -1,4 +1,4 @@
-defmodule AocTest do
+defmodule AocDay1Test do
   use ExUnit.Case
   doctest Aoc
 
@@ -19,6 +19,7 @@ defmodule AocTest do
   end
 
   test "Day1.solution1(Aoc.day1_input())" do
+    # IO.inspect Aoc.day1_solution1(Aoc.day1_input)
     assert Aoc.day1_solution1(Aoc.day1_input) == 1119
   end
 
@@ -43,7 +44,7 @@ defmodule AocTest do
   end
 
   test "Day1.solution2(Aoc.day1_input())" do
-    IO.inspect Aoc.day1_solution2(Aoc.day1_input)
-    # assert Aoc.day1_solution1(Aoc.day1_input) == 1119
+    # IO.inspect Aoc.day1_solution2(Aoc.day1_input)
+    assert Aoc.day1_solution2(Aoc.day1_input) == 1420
   end
 end

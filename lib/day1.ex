@@ -12,8 +12,8 @@ defmodule Day1 do
 
   defp day1_solution1([first, first | []], sum), do: first + sum
   defp day1_solution1([_first, _second | []], sum), do: sum
-  defp day1_solution1([first, first | rest] = input, sum) when is_list(input), do: day1_solution1([first | rest], sum + first)
-  defp day1_solution1([_first, second | rest] = input, sum) when is_list(input), do: day1_solution1([second | rest], sum)
+  defp day1_solution1([first, first | rest], sum), do: day1_solution1([first | rest], sum + first)
+  defp day1_solution1([_first, second | rest], sum), do: day1_solution1([second | rest], sum)
 
   defp circular_validation(input) when is_list(input) do
     first = List.first(input)
